@@ -8,7 +8,7 @@ haylen:
     runAsUser: 101
     runAsGroup: 101
     runAsNonRoot: true
-    readOnlyRootFilesystem: false
+    readOnlyRootFilesystem: true
 
   ingress:
     enabled: true

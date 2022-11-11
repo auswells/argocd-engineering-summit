@@ -1,5 +1,14 @@
 weston:
   replicaCount: 1
+  image:
+    pullPolicy: Always
+  securityContext:
+    privileged: false
+    allowPrivilegeEscalation: false
+    runAsUser: 101
+    runAsGroup: 101
+    runAsNonRoot: true
+    readOnlyRootFilesystem: true
   ingress:
     enabled: true
     hostName: weston-dev.awells.dev.actiandatacloud.com
