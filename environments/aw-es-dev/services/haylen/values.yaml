@@ -13,8 +13,7 @@ haylen:
     enabled: true
     hostName: haylen-dev.awells.dev.actiandatacloud.com
     tls:
-      - secretName: star-cert
-        hosts:
+      - hosts:
           - haylen-dev.awells.dev.actiandatacloud.com
     annotations:
       kubernetes.io/ingress.class: nginx
