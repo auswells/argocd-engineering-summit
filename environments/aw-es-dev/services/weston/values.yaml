@@ -2,6 +2,6 @@ weston:
   replicaCount: 1
   ingress:
     enabled: true
-    hostName: weston-dev.awells.actiandatacloud.com
+    hostName: weston-dev.awells.dev.actiandatacloud.com
     annotations:
       kubernetes.io/ingress.class: nginx
