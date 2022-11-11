@@ -1,6 +1,7 @@
 haylen:
   replicaCount: 1
-  imagePullPolicy: Always
+  image:
+    pullPolicy: Always
   securityContext:
     privileged: false
     allowPrivilegeEscalation: false
