@@ -2,8 +2,7 @@ external-dns:
   provider: aws
   aws:
     zoneType: "public"
-    credentials:
-      secretName: aws-route53
+  extraEnvVarsSecret: aws-route53
   replicas: 1
   policy: sync
   registry: "txt"
