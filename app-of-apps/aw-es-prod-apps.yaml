@@ -1,0 +1,14 @@
+#apiVersion: argoproj.io/v1alpha1
+#kind: Application
+#metadata:
+#  name: aw-es-prod-apps
+#  namespace: argocd
+#spec:
+#  project: default
+#  source:
+#    repoURL: https://github.com/auswells/engineering-summit-argocd.git
+#    targetRevision: HEAD
+#    path: environments/aw-es-prod/applications
+#  destination:
+#    server: https://kubernetes.default.svc
+#    namespace: argocd

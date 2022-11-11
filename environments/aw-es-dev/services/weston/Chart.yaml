@@ -1,0 +1,6 @@
+name: weston
+version: 1.0.0
+dependencies:
+  - name: weston
+    repository: https://auswells.github.io/engineering-summit-helm-charts
+    version: 1.0.0

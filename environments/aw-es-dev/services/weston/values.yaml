@@ -1,0 +1,5 @@
+weston:
+  replicaCount: 1
+  ingress:
+    enabled: true
+    hostName: weston-dev.awells.actiandatacloud.com

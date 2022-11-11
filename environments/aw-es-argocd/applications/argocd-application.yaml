@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: aw-es-argocd-argocd
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/auswells/engineering-summit-argocd.git
+    targetRevision: HEAD
+    path: environments/aw-es-argocd/argocd
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true

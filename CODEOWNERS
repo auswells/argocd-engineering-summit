@@ -1,0 +1,5 @@
+CODEOWNERS                      @auswells
+
+/environments/aw-es-argocd/     @auswells
+/environments/aw-es-dev/        @auswells
+/environments/aw-es-prod/       @auswells

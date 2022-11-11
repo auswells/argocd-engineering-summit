@@ -1,0 +1,5 @@
+haylen:
+  replicaCount: 1
+  ingress:
+    enabled: true
+    hostName: haylen-dev.awells.actiandatacloud.com
