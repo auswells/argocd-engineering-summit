@@ -4,4 +4,4 @@ ingress-nginx:
     service:
       type: LoadBalancer
     extraArgs:
-      default-ssl-certificate: star-cert
+      default-ssl-certificate: ingress-nginx/star-cert
