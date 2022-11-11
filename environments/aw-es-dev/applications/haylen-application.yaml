@@ -16,7 +16,7 @@ spec:
       valueFiles:
         - values.yaml
   destination:
-    server: aw-es-dev
+    name: aw-es-dev
     namespace: haylen
   syncPolicy:
     automated: {}
