@@ -3,5 +3,3 @@ ingress-nginx:
     replicaCount: 2
     service:
       type: LoadBalancer
-    extraArgs:
-      default-ssl-certificate: ingress-nginx/star-cert
