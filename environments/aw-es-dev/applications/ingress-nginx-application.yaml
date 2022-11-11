@@ -14,7 +14,7 @@ spec:
     helm:
       releaseName: ingress-nginx
       valueFiles:
-        values.yaml
+        - values.yaml
   destination:
     server: aw-es-dev
     namespace: ingress-nginx

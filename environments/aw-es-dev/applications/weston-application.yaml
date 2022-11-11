@@ -14,7 +14,7 @@ spec:
     helm:
       releaseName: weston
       valueFiles:
-        values.yaml
+        - values.yaml
   destination:
     server: aw-es-dev
     namespace: weston
