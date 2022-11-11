@@ -1,0 +1,11 @@
+external-dns:
+  provider: aws
+  aws:
+    zoneType: "public"
+  extraEnvVarsSecret: aws-route53
+  replicas: 1
+  policy: sync
+  registry: "txt"
+  txtOwnerId: "aw-es-prod"
+  zoneIdFilters:
+    - Z3KI28UGUAVGZG

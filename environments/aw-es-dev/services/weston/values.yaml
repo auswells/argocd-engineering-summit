@@ -1,7 +1,8 @@
 weston:
   replicaCount: 1
   image:
-    pullPolicy: Always
+    tag: latest
+    pullPolicy: IfNotPresent
   securityContext:
     privileged: false
     allowPrivilegeEscalation: false

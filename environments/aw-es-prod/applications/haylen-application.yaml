@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: aw-es-prod-haylen
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/auswells/engineering-summit-argocd.git
+    targetRevision: HEAD
+    path: environments/aw-es-prod/services/haylen
+    helm:
+      releaseName: haylen
+      valueFiles:
+        - values.yaml
+  destination:
+    name: aw-es-prod
+    namespace: haylen
+  syncPolicy:
+#    automated: {}
+    syncOptions:
+      - CreateNamespace=true

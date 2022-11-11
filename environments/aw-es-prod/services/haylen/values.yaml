@@ -11,6 +11,6 @@ haylen:
     runAsNonRoot: true
   ingress:
     enabled: true
-    hostName: haylen-dev.awells.dev.actiandatacloud.com
+    hostName: haylen-prod.awells.dev.actiandatacloud.com
     annotations:
       kubernetes.io/ingress.class: nginx

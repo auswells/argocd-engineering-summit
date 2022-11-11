@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: aw-es-prod-ingress-nginx
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/auswells/engineering-summit-argocd.git
+    targetRevision: HEAD
+    path: environments/aw-es-prod/cluster-addons/ingress-nginx
+    helm:
+      releaseName: ingress-nginx
+      valueFiles:
+        - values.yaml
+  destination:
+    name: aw-es-prod
+    namespace: ingress-nginx
+  syncPolicy:
+#    automated: {}
+    syncOptions:
+      - CreateNamespace=true
