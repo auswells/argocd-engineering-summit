@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/auswells/engineering-summit-argocd.git
     targetRevision: HEAD
     path: environments/aw-es-argocd/argocd
+    directory:
+      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
