@@ -2,10 +2,10 @@ ingress-nginx:
   controller:
     replicaCount: 2
     service:
-      annotations:
-        "service.beta.kubernetes.io/aws-load-balancer-proxy-protocol": '*'
       type: LoadBalancer
       externalTrafficPolicy: "Local"
+      loadBalancerSourceRanges:
+        - 149.20.195.26/32
     extraArgs:
       default-ssl-certificate: ingress-nginx/star-cert
       enable-ssl-passthrough: ""
