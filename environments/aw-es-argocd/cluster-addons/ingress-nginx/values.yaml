@@ -5,6 +5,7 @@ ingress-nginx:
       annotations:
         "service.beta.kubernetes.io/aws-load-balancer-proxy-protocol": '*'
       type: LoadBalancer
+      externalTrafficPolicy: "Local"
     extraArgs:
       default-ssl-certificate: ingress-nginx/star-cert
       enable-ssl-passthrough: ""
