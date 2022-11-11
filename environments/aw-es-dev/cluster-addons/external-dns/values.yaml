@@ -2,20 +2,11 @@ external-dns:
   provider: aws
   aws:
     zoneType: "public"
+    credentials:
+      secretName: aws-route53
   replicas: 1
   policy: sync
   registry: "txt"
   txtOwnerId: "aw-es-dev"
   zoneIdFilters:
     - Z3KI28UGUAVGZG
-  env:
-    - name: AWS_ACCESS_KEY_ID
-      valueFrom:
-        secretKeyRef:
-          name: aws-route53
-          key: AWS_ACCESS_KEY_ID
-    - name: AWS_SECRET_ACCESS_KEY
-      valueFrom:
-        secretKeyRef:
-          name: aws-route53
-          key: AWS_SECRET_ACCESS_KEY
