@@ -3,5 +3,9 @@ ingress-nginx:
     replicaCount: 2
     service:
       type: LoadBalancer
+      externalTrafficPolicy: "Local"
+      loadBalancerSourceRanges:
+        - 149.20.195.26/32
     extraArgs:
       default-ssl-certificate: ingress-nginx/star-cert
+      enable-ssl-passthrough: ""
