@@ -5,7 +5,7 @@ external-dns:
   replicas: 1
   policy: sync
   registry: "txt"
-  txtOwnerId: "aw-es-dev"
+  txtOwnerId: "aw-es-argocd"
   zoneIdFilters:
     - Z3KI28UGUAVGZG
   env:
