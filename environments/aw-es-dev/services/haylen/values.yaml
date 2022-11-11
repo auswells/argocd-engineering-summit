@@ -1,10 +1,9 @@
 haylen:
   replicaCount: 1
+  imagePullPolicy: Always
   securityContext:
     privileged: false
     allowPrivilegeEscalation: false
-    runAsUser: 101
-    runAsGroup: 101
     runAsNonRoot: true
     readOnlyRootFilesystem: false
 
