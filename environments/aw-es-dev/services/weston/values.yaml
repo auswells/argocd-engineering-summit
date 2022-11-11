@@ -3,3 +3,5 @@ weston:
   ingress:
     enabled: true
     hostName: weston-dev.awells.actiandatacloud.com
+    annotations:
+      kubernetes.io/ingress.class: nginx
