@@ -1,6 +1,6 @@
-name: weston
+name: alien
 version: 1.0.0
 dependencies:
-  - name: weston
+  - name: alien
     repository: https://auswells.github.io/engineering-summit-helm-charts
     version: 1.0.0

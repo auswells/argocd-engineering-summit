@@ -1,6 +1,0 @@
-name: haylen
-version: 1.0.0
-dependencies:
-  - name: haylen
-    repository: https://auswells.github.io/engineering-summit-helm-charts
-    version: 1.0.0

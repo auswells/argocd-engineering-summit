@@ -1,4 +1,4 @@
-haylen:
+alien:
   replicaCount: 1
   image:
     tag: latest
@@ -11,6 +11,6 @@ haylen:
     runAsNonRoot: true
   ingress:
     enabled: true
-    hostName: haylen-prod.awells.dev.actiandatacloud.com
+    hostName: alien-dev.awells.dev.actiandatacloud.com
     annotations:
       kubernetes.io/ingress.class: nginx

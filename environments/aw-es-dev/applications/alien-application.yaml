@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: aw-es-dev-weston
+  name: aw-es-dev-alien
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -10,14 +10,14 @@ spec:
   source:
     repoURL: https://github.com/auswells/engineering-summit-argocd.git
     targetRevision: HEAD
-    path: environments/aw-es-dev/services/weston
+    path: environments/aw-es-dev/services/alien
     helm:
-      releaseName: weston
+      releaseName: alien
       valueFiles:
         - values.yaml
   destination:
     name: aw-es-dev
-    namespace: weston
+    namespace: alien
   syncPolicy:
     automated: {}
     syncOptions:
