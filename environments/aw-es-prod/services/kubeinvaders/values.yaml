@@ -1,0 +1,10 @@
+kubeinvaders:
+  config:
+    target_namespace: alien
+  ingress:
+    enabled: true
+    hostName: kubeinvaders-prod.awells.dev.actiandatacloud.com
+  deployment:
+    replicaCount: 1
+    image:
+      tag: v1.9.6
