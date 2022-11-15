@@ -1,7 +1,7 @@
 alien:
   replicaCount: 10
   image:
-    tag: latest
+    tag: DoesNotExist
     pullPolicy: IfNotPresent
   securityContext:
     privileged: false
