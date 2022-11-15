@@ -1,5 +1,5 @@
 alien:
-  replicaCount: 1
+  replicaCount: 2
   image:
     tag: latest
     pullPolicy: IfNotPresent
